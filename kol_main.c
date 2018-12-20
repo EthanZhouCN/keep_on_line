@@ -47,7 +47,7 @@ int main(int ar, char **arg)
 	sem_init(&sem_recv_start, 0, 0);
 	sem_init(&sem_report_start, 0, 0);
 	
-	rent_get_config();
+	//rent_get_config();
 	PRINTF("g_rent_config.server_ip = %s.\n", g_rent_config.server_ip);
 	PRINTF("g_rent_config.server_port = %d.\n", g_rent_config.server_port);
 	PRINTF("g_rent_config.hb_interval = %d.\n", g_rent_config.hb_interval);

@@ -311,7 +311,10 @@ void pthread_socket_data_recv()
 }
 
 
-
+void handle_pkg(uint8_t type)
+{
+	
+}
 
 void pthread_keep_on_line(void)
 {
@@ -363,7 +366,7 @@ void pthread_keep_on_line(void)
 			/**** 处理登入 ******************************/
 			
 			//make and send login
-			//msg_buff_len = rent_make_pkg(RENT_LOGIN, msg_buff_data);
+			msg_buff_len = make_pkg(RENT_LOGIN, msg_buff_data);
 			
 			user_data_socket_send(msg_buff_data, msg_buff_len);
 	

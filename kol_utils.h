@@ -8,6 +8,9 @@ typedef struct{
 	u8t  server_ip[70];					//租赁平台 IP地址
 	u16t server_port;						//租赁平台 端口
 	u16t hb_interval;			//租赁心跳发送周期
+	u8t  devid[70];
+	u8t  prjid[70];
+	u8t  auth_info[70];
 }rent_config_t;
 
 extern rent_config_t g_rent_config;
